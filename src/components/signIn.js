@@ -40,7 +40,7 @@ class SignIn extends Component {
                             <FormControl
                                 type="text"
                                 name="email"
-                                placeholder="Email"
+                                placeholder="Username"
                                 value={email}
                                 onChange={this.handleChange.bind(this)}
                             />
@@ -49,32 +49,9 @@ class SignIn extends Component {
                 </Row>
                 <Row>
                     <Col xs={6}>
-                        <FormGroup>
-                            <ControlLabel id="password"></ControlLabel>
-                            <FormControl
-                                type="password"
-                                name="password"
-                                placeholder="Password"
-                                value={this.state.form.password}
-                                onChange={this.handleChange.bind(this)}
-                            />
-                        </FormGroup>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={6}>
                             <Button id="logInbtn" onClick = {this.login.bind(this)} >
-                                Log into your Trivia Account!
+                                Play Trivia Now!
                             </Button>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={6}>
-                        <Link to="/signup">
-                            <Button id="logInbtn">
-                                Dont have a Trivia Accout?
-                            </Button>
-                        </Link>
                     </Col>
                 </Row>
             </form>

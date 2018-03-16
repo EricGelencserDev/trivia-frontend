@@ -14,7 +14,7 @@ class LandingPageView extends Component {
             </div>
             <div className="container">
                 <div className="signin">
-                    <h3>Sign-In</h3>
+                    <h3>Enter username</h3>
                         <SignIn onSignIn = {this.onSignIn}/>
                 </div>
             </div>

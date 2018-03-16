@@ -130,9 +130,9 @@ class TriviaQuestions extends Component {
 
     let answers = currentQuestion.answers;
     const { score } = this.state
-    let questionBlock = 
+    let questionBlock =
     <div>
-      <div id="waiting"> Waiting for question </div>
+      <div id="waiting"> Waiting for Other Players </div>
     </div>
 
 
@@ -141,8 +141,8 @@ class TriviaQuestions extends Component {
           <div>
             <div className = 'scoreBoard'>{this.renderPlayerList()}</div>
               <h3 className= 'score'> Score: {score} </h3>
-              <p className = 'category'>{currentQuestion.category} </p>
-              <p className = 'question'> {decodeEntities(currentQuestion.question)} </p>
+              <p className = 'category'>{currentQuestion.category}
+               className = 'question'> {decodeEntities(currentQuestion.question)} </p>
             <div className="answer-container">
               {answers.map((a) => {
               return <div className="answer-button" key = {a} onClick = {this.answerClick.bind(this, a)}> {decodeEntities(a)} </div>
@@ -176,7 +176,7 @@ class TriviaQuestions extends Component {
     return (
       <div>
         <img id="background" src={categoryImage} alt="category" />
-        <h1 className="welcome"> Welcome to Trivia!</h1> {questionBlock} 
+        <h1 className="welcome"> Welcome to Trivia!</h1> {questionBlock}
       </div>
     )
   }
