@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import SignIn from '../components/signIn'
 import '../App.css';
+import Chat from '../components/chat'
+
 class LandingPageView extends Component {
     constructor (props) {
         super();
@@ -15,7 +17,9 @@ class LandingPageView extends Component {
             <div className="container">
                 <div className="signin">
                     <h3>Enter username</h3>
+                    <Chat username = "Bob User"/>
                         <SignIn onSignIn = {this.onSignIn}/>
+
                 </div>
             </div>
         </div>
